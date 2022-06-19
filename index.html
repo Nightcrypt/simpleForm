@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Patient Details</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<h2>Details du patient</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Nom(s) et Prenom(s)</label>
+			<input type="text" placeholder="florinpop17" id="username" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<!-- age -->
+		<div class="form-control">
+			<label id="lbl_age" for="username">Age</label>
+			<input type="number" placeholder="32" id="age" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label id="lbl_gender" for="username">Gender</label>
+			<div class="radio-container">
+				<input name="gender" type="radio" id="homme" value="Homme"/>
+				<label for="homme" class="radioBtn">Homme</label>
+
+				<input name="gender" type="radio" id="femme" value="Femme"/>
+				<label for="femme" class="radioBtn">Femme</label>
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+		<!-- Hypertension -->
+		<div class="form-control">
+			<label id="lbl_hypertension" for="username">Hypertension</label>
+			<div class="radio-container">
+				<input name="hypertension" type="radio" id="yes_hypertension" value="Yes"/>
+				<label for="yes_hypertension" class="radioBtn">Yes</label>
+
+				<input name="hypertension" type="radio" id="no_hypertension" value="No"/>
+				<label for="no_hypertension" class="radioBtn">No</label>
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+		<!-- Heart Disease -->
+		<div class="form-control">
+			<label id="lbl_heartDisease" for="username">Heart Disease</label>
+			<div class="radio-container">
+				<input name="heartDisease" type="radio" id="yes_heartDisease" value="Yes"/>
+				<label for="yes_heartDisease" class="radioBtn">Yes</label>
+
+				<input name="heartDisease" type="radio" id="no_heartDisease" value="No"/>
+				<label for="no_heartDisease" class="radioBtn">No</label>
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+		<!-- married -->
+		<div class="form-control">
+			<label id="lbl_married" for="username">Married</label>
+			<div class="radio-container">
+				<input name="married" type="radio" id="yes_married" value="Yes"/>
+				<label for="yes_married" class="radioBtn">Yes</label>
+
+				<input name="married" type="radio" id="no_married" value="No"/>
+				<label for="no_married" class="radioBtn">No</label>
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+		<!-- Type of Work -->
+		<div class="form-control">
+			<label id="lbl_workType" for="username">Type of Work</label>
+			<div class="radio-container">
+				<input name="workType" type="radio" id="govt_job" value="govt_job"/>
+				<label for="govt_job" class="radioBtn">Gouverment Job</label>
+
+				<input name="workType" type="radio" id="never_worked" value="never_worked"/>
+				<label for="never_worked" class="radioBtn">Never worked</label>
+				
+				<input name="workType" type="radio" id="private" value="private"/>
+				<label for="private" class="radioBtn">Private</label>
+
+				<input name="workType" type="radio" id="self_employ" value="self_employ"/>
+				<label for="self_employ" class="radioBtn">Self employment</label>
+
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+
+		<!-- Residence type -->
+		<div class="form-control">
+			<label id="lbl_residence" for="username">Residence Type</label>
+			<div class="radio-container">
+				<input name="residence" type="radio" id="urban" value="urban"/>
+				<label for="urban" class="radioBtn">Urban</label>
+
+				<input name="residence" type="radio" id="fural" value="fural"/>
+				<label for="no_married" class="radioBtn">Fural</label>
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+
+		<!-- Average Glucose level -->
+		<div class="form-control">
+			<label id="lbl_avg_glucose" for="username">Average Glucose level</label>
+			<input type="number" placeholder="120.2" id="avg_glucose"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<!-- BMI -->
+		<div class="form-control">
+			<label id="lbl_bmi" for="username">BMI</label>
+			<input type="number" placeholder="38.6" id="bmi"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+
+		<!-- Smoking Status -->
+		<div class="form-control">
+			<label id="lbl_smokingStatus" for="username">Smoking Status</label>
+			<div class="radio-container">
+				<input name="smokingStatus" type="radio" id="ex_smoker" value="formely_Smoker"/>
+				<label for="ex_smoker" class="radioBtn">Formely Smoker</label>
+
+				<input name="smokingStatus" type="radio" id="never_smoked" value="never_Smoked"/>
+				<label for="never_smoked" class="radioBtn">Never smoked</label>
+				
+				<input name="smokingStatus" type="radio" id="smoker" value="smoker"/>
+				<label for="smoker" class="radioBtn">Smokes</label>
+
+			</div>
+			<p name="error"></p>
+
+			<small>Error message</small>
+		</div>
+		<button id="submit_btn">Predict</button>
+	</form>
+</div>
+
+<script  src="./script.js"></script>
+
+</body>
+</html>
